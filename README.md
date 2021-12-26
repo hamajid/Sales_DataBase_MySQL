@@ -314,6 +314,7 @@ select * from customer;
 ```
 
 ![Cust_Delete](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust_delete.PNG)
+
 As we See, the customer with ID 10002 has been deleted.
 <a name=Querying></a>
 
@@ -324,4 +325,4 @@ In this section, we will be exploring tables and run same basic statistics such 
 ```
 select * from customer;
 ```
-![Cust](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust.PNG)
+
