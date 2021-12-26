@@ -336,4 +336,11 @@ If we run all those select statement at once, the result will be returned in dif
 
 ![SelectAll](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/SelectAll.PNG)
 
+- **Check our list of products and prices from the highest to the lowest .**
+```
+ Select Prod_name, Prod_price
+  From  Product
+  order by  Prod_price desc;
+```
+![PriceList](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/PriceList.PNG)
 
