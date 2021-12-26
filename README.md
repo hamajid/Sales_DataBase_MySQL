@@ -352,7 +352,7 @@ SELECT MAX(Prod_price) AS Highest_Price ,  MIN(Prod_price) AS Lowest_Price, AVG 
  
 ![Price](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Price.PNG)
 
-- **Querying and joining tables.**
+- **Querying and joining 2 tables.**
 
 - Create a list of vendors and link it to their product and prices using Where clause. 
 ```
@@ -376,11 +376,20 @@ Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_pr
  
  - Create a list of ordering customers including the product and the date of the order ( **WHERE Clause**)
 ```
-SELECT customer.cust_name, Product.Prod_name, orders.order_date
+SELECT customer.cust_name AS Customer , Product.Prod_name AS Product , orders.order_date AS Date
 FROM customer, Product, orders, orderitem
 WHERE customer.cust_id = orders.cust_id 
 AND orders.order_num = orderitem.order_num
 AND orderitem.prod_id = product.prod_id
+ORDER BY order_date;
+```
+- Create a list of ordering customers including the product and the date of the order ( **JOIN Clause**)
+```
+SELECT customer.cust_name AS Customer , Product.Prod_name AS Product , orders.order_date AS Date
+FROM customer
+JOIN orders ON customer.cust_id = orders.cust_id 
+JOIN orderitem  ON orders.order_num = orderitem.order_num
+JOIN Product ON orderitem.prod_id = product.prod_id
 ORDER BY order_date;
 ```
 
