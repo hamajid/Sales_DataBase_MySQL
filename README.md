@@ -383,6 +383,7 @@ AND orders.order_num = orderitem.order_num
 AND orderitem.prod_id = product.prod_id
 ORDER BY order_date;
 ```
+![Link4Tab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Linked4Tab.PNG)
 - Create a list of ordering customers including the product and the date of the order ( **JOIN Clause**)
 ```
 SELECT customer.cust_name AS Customer , Product.Prod_name AS Product , orders.order_date AS Date
@@ -392,4 +393,4 @@ JOIN orderitem  ON orders.order_num = orderitem.order_num
 JOIN Product ON orderitem.prod_id = product.prod_id
 ORDER BY order_date;
 ```
-
+![Join4Tab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Join4Tab.PNG)
