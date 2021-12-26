@@ -1,4 +1,4 @@
-![Logo](/../../media/HA_Logo_Smalll.png) 
+![Logo](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/HA_Logo_Smalll.png?raw=true) 
 
 # MySQL Sales Database
 This GitHub repository contains code samples that demonstrate how to create a sales database in MySQL. This project aims teaching the basics of creating and querying data from the sales database. 
