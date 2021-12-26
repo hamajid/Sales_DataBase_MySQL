@@ -8,7 +8,7 @@ This GitHub repository contains code samples that demonstrate how to create a sa
 [About this sample](#about-this-sample)<br/>
 [Create database](#Create-database)<br/>
 [Create tables ](#Create-tables)<br/>
-[Manipulating Data](#Manipulating)<br/>
+[Manipulating database](#Manipulating)<br/>
 [Querying and exploring the database](#Querying)<br/>
 [Subquery](#Subquery)<br/>
 
@@ -115,7 +115,7 @@ CREATE TABLE productnote
 
 <a name=Manipulating></a>
 
-## Manipulating
+## Manipulating database
 
 In this section, we will use DML commands to manipulate data (insert / Update and Delete). 
 
