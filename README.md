@@ -354,7 +354,7 @@ SELECT MAX(Prod_price) AS Highest_Price ,  MIN(Prod_price) AS Lowest_Price, AVG 
 
 - **Querying and joining tables.**
 
-- Create a list of vendors and link it to their product and prices using Where clause. 
+- Create a list of vendors and link it to their product and prices using _Where_ clause. 
 ```
 Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_price As Price
   From Vendor, Product
@@ -362,7 +362,7 @@ Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_pr
  ```
  
  
- - Create a list of vendors and link it to their product and prices using Join clause. 
+ - Create a list of vendors and link it to their product and prices using _Join_ clause. 
  ```
  Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_price As Price
   From Vendor
