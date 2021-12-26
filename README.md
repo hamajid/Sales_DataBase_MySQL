@@ -352,7 +352,7 @@ SELECT MAX(Prod_price) AS Highest_Price ,  MIN(Prod_price) AS Lowest_Price, AVG 
  
 ![Price](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Price.PNG)
 
-- ** Querying and joining tables.**
+- **Querying and joining tables.**
 
 - Create a list of vendors and link it to their product and prices using Where clause. 
 ```
