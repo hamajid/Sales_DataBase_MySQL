@@ -372,4 +372,15 @@ Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_pr
 ```
  ![JoinTab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/JoinTab.PNG)
 
+ - ** Querying and joining multiple tables.**
+ 
+ - Create a list of ordering customers including the product and the date of the order ( **WHERE Clause**)
+```
+SELECT customer.cust_name, Product.Prod_name, orders.order_date
+FROM customer, Product, orders, orderitem
+WHERE customer.cust_id = orders.cust_id 
+AND orders.order_num = orderitem.order_num
+AND orderitem.prod_id = product.prod_id
+ORDER BY order_date;
+```
 
