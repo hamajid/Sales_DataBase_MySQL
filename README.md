@@ -312,4 +312,4 @@ In this section, we will be exploring tables and run same basic statistics such 
 ```
 select * from customer;
 ```
-![Cust]https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust.PNG
+![Cust](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust.PNG)
