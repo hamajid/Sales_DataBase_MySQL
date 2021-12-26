@@ -391,7 +391,7 @@ ORDER BY order_date;
 <a name=Subquery></a>
 ## Subquery.
 
-- ** Check if a customer have an order or not.**
+- **Check if a customer have an order or not.**
 - First we delete order # 20006 to test our queries.
 ```
 DELETE FROM orderitem WHERE order_num=20006;
