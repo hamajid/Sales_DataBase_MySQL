@@ -309,6 +309,12 @@ where cust_id=10001  ;
 DELETE FROM customer
 WHERE cust_id=10002;
 ```
+```
+select * from customer;
+```
+
+![Cust_Delete](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust_delete.PNG)
+As we See, the customer with ID 10002 has been deleted.
 <a name=Querying></a>
 
 ## Querying database
