@@ -293,10 +293,15 @@ Comment forwarded to vendor.'
 
 - **UPDATE CUSTOMER 10001.**
 ```
+select * from customer;
+```
+![Cust](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust.PNG)
+```
 update customer
    set  cust_name='Technology Inc', cust_address='111 Franklin St', cust_city='Philadelphia', cust_state='PA', cust_zip='19130'
 where cust_id=10001  ;
 ```
+![Cust_update](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust_update.PNG)
  
 - **REMOVE CUSTOMER 10002.**
 ```
