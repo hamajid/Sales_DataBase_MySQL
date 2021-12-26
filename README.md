@@ -334,6 +334,6 @@ select * from productnote;
 ```
 If we run all those select statement at once, the result will be returned in different tabs by order (see Image).
 
-![SelectAll] (https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/SelectAll.PNG)
+![SelectAll](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/SelectAll.PNG)
 
 
