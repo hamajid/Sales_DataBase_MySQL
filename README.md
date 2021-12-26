@@ -302,7 +302,7 @@ update customer
 where cust_id=10001  ;
 ```
 ![Cust_update](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Cust_update.PNG)
- 
+ As we see, the customer 10001 information was changed from "Coyote Inc." to Technology Inc.".
 - **REMOVE CUSTOMER 10002.**
 ```
 DELETE FROM customer
