@@ -1,4 +1,4 @@
-![logo](./media/HA_Logo_small.png) 
+![logo](/../media/HA_Logo_small.png) 
 
 # MySQL Sales Database
 This GitHub repository contains code samples that demonstrate how to create a sales database in MySQL. This project aims teaching the basics of creating and querying data from the sales database. 
