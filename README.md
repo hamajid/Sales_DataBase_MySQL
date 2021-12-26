@@ -1,4 +1,4 @@
-![](./media/HA_Logo.png) 
+(./media/HA_Logo.png) 
 
 # MySQL Sales Database
 This GitHub repository contains code samples that demonstrate how to create a sales database in MySQL. This project aims teaching the basics of creating and querying data from the sales database. 
@@ -312,4 +312,4 @@ In this section, we will be exploring tables and run same basic statistics such 
 ```
 select * from customer;
 ```
-![](./media/Cust.png)
+(./media/Cust.png)
