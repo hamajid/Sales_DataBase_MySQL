@@ -322,7 +322,18 @@ As we See, the customer with ID 10002 has been deleted.
 
 In this section, we will be exploring tables and run same basic statistics such as Min, Max, Average on the product table.
 
+- **Querying tables.**
+
 ```
 select * from customer;
+select * from product;
+select * from vendor;
+select * from orders;
+select * from orderitem;
+select * from productnote;
 ```
+If we run all those select statement at once, the result will be returned in different tabs by order (see Image).
+
+![SelectAll] (https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/SelectAll.PNG)
+
 
