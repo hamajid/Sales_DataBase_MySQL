@@ -10,11 +10,10 @@ This GitHub repository contains code samples that demonstrate how to create a sa
 [Create tables ](#Create-tables)<br/>
 [Manipulating Data](#Manipulating)<br/>
 [Querying and exploring the database](#Querying)<br/>
+[Subquery](#Subquery)<br/>
 
 <a name=about-this-sample></a>
-
 ## About this sample
-
 This database sample is composed of 6 tables.
 
 - **Customer Table.**
@@ -25,19 +24,14 @@ This database sample is composed of 6 tables.
 - **productnote Table.**
 
 <a name=Create-database></a>
-
 ## Create database
-
 As a good practice, we may need to drop the database before creating one.
 ```
 Drop database if exists Sales;
 Create database Sales;
 ```
-	
 <a name=Create-tables></a>
-
 ## Create tables
-	
 - **Create customer Table.**
 ```
 CREATE TABLE customer
@@ -394,4 +388,38 @@ JOIN Product ON orderitem.prod_id = product.prod_id
 ORDER BY order_date;
 ```
 ![Join4Tab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Join4Tab.PNG)
+<a name=Subquery></a>
+## Subquery.
 
+- ** Check if a customer have an order or not.**
+- First we delete order # 20006 to test our queries.
+```
+DELETE FROM orderitem WHERE order_num=20006;
+```
+- list customers that have orders.
+```
+ SELECT cust_id
+ FROM orders As O
+ Where exists
+			(Select * From orderitem where o.order_num = orderitem.order_num);
+```
+
+![custOrder](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/custOrder.PNG)
+
+
+- list customers that don't have orders
+```
+ SELECT cust_id
+ FROM orders As O
+ Where  not exists
+(Select * From orderitem where o.order_num = orderitem.order_num);
+```
+![custNoOrder](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/custNoOrder.PNG)
+
+- list vendors that don't have products
+```	
+ select Vendor.vend_name
+  from Vendor
+ where not exists (select 'x' from Product where Vendor.vend_id = Product.vend_id); 
+```
+![VendNoProd](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/VendNoProd.PNG)
