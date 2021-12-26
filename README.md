@@ -354,19 +354,20 @@ SELECT MAX(Prod_price) AS Highest_Price ,  MIN(Prod_price) AS Lowest_Price, AVG 
 
 - **Querying and joining tables.**
 
-- Create a list of vendors and link it to their product and prices using **Where** clause. 
+- Create a list of vendors and link it to their product and prices using Where clause. 
 ```
 Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_price As Price
   From Vendor, Product
  where Vendor.vend_id = Product.vend_id;
  ```
+ ![LinkTab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/LinkedTab.PNG)
  
- 
- - Create a list of vendors and link it to their product and prices using **Join** clause. 
+- Create a list of vendors and link it to their product and prices using Join clause. 
  ```
  Select Vendor.vend_name As Vendor, Product.Prod_name AS Product, Product.Prod_price As Price
   From Vendor
  join Product ON Vendor.vend_id = Product.vend_id;
 ```
+ ![JoinTab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/JoinTab.PNG)
 
 
