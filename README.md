@@ -344,3 +344,13 @@ If we run all those select statement at once, the result will be returned in dif
 ```
 ![PriceList](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/PriceList.PNG)
 
+- **Calculating Highest, Lowest and Average price.**
+```
+SELECT MAX(Prod_price) AS Highest_Price ,  MIN(Prod_price) AS Lowest_Price, AVG (Prod_price) AS Average_Price
+ FROM product;
+ ```
+ 
+![Price](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Price.PNG)
+
+
+
