@@ -394,3 +394,4 @@ JOIN Product ON orderitem.prod_id = product.prod_id
 ORDER BY order_date;
 ```
 ![Join4Tab](https://github.com/hamajid/Sales_DataBase_MySQL/blob/main/Media/Join4Tab.PNG)
+
